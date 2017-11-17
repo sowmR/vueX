@@ -1,3 +1,4 @@
+/* Presets Holds the color and size preset values */
 * {
   box-sizing: border-box !important;
 }
@@ -7,6 +8,43 @@ body {
   font-family: Calibri;
   color: #333232;
   font-size: 16px;
+}
+
+/* navbar*/
+.nav {
+  display: inline-block;
+  background-color: #089b93;
+  min-height: 40px;
+}
+
+.nav-horizontal {
+  width: 100%;
+}
+
+.nav-horizontal ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-horizontal ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+.nav-horizontal ul li .item {
+  display: block;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #fbfbfb;
+  font-size: 21px;
+}
+
+.nav-horizontal ul li .item:hover {
+  background-color: #fdfdfd;
+  color: #333232;
+  height: 41px;
 }
 
 .row {
