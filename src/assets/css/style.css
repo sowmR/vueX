@@ -71,7 +71,7 @@ body {
 
 .product-list1 .item {
   color: #ff6600 !important;
-  opacity: 0.7 !important;
+  opacity: 0.5 !important;
 }
 
 .product-list2 {
@@ -82,13 +82,57 @@ body {
 
 .product-list2 .item {
   color: #0263be !important;
-  opacity: 0.7 !important;
+  opacity: 0.5 !important;
 }
 
+.product-table {
+  padding: 5px;
+  display: block;
+  float: left;
+  width: calc(100% - 0px);
+  height: 40px;
+}
+
+.product-table .column {
+  display: inline-block;
+  width: calc(50% - 10px);
+  background-color: rgba(255, 149, 88, 0.5);
+  border: 2px solid #0263be;
+  border-radius: 5px;
+}
+
+.product-table .column .item {
+  display: inline-block;
+  padding: 5px;
+  color: #333232;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.product-table .column:before {
+  content: '  ';
+  width: 100%;
+}
+
+.product-table .column:after {
+  content: '  ';
+  width: 100%;
+}
+
+/*Buttons*/
 .button {
   background-color: #089b93;
   color: #333232;
-  opacity: 0.7;
+  opacity: 0.5;
+  border-radius: 5px;
+  border: none;
+  min-height: 40px;
+  cursor: pointer;
+}
+
+.link-btn {
+  background-color: none;
+  color: #333232;
   border-radius: 5px;
   border: none;
   min-height: 40px;

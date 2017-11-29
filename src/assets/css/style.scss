@@ -66,28 +66,66 @@
     .product-list1 {
         font-family: $font-stack;
         color: $font-color-orange;
-    }
-    
-    .product-list1 .item {
-        color: $font-color-orange !important;
-        opacity: $light !important;
+        .item {
+            color: $font-color-orange !important;
+            opacity: $light !important;
+        }
     }
     
     .product-list2 {
         font-family: $font-stack;
         color: $font-color-blue;
         opacity: $dark;
+        .item {
+            color: $font-color-blue !important;
+            opacity: $light !important;
+        }
     }
     
-    .product-list2 .item {
-        color: $font-color-blue !important;
-        opacity: $light !important;
+    .product-table {
+        padding: 5px;
+        display: block;
+        float: left;
+        width: calc(100% - 0px);
+        height: $min-height;
+        .column {
+            display: inline-block;
+            width: calc(50% - 10px);
+            background-color: $bg-orange-light;
+            border: 2px solid $font-color-blue;
+            border-radius: 5px;
+            .item {
+                display: inline-block;
+                padding: 5px;
+                color: $font-color;
+                vertical-align: middle;
+                text-align: center;
+            }
+            &:before {
+                content: '  ';
+                width: 100%;
+            }
+            &:after {
+                content: '  ';
+                width: 100%;
+            }
+        }
     }
+    /*Buttons*/
     
     .button {
         background-color: $secondary_bg;
         color: $font-color;
         opacity: $light;
+        border-radius: 5px;
+        border: none;
+        min-height: $min-height;
+        cursor: pointer;
+    }
+    
+    .link-btn {
+        background-color: none;
+        color: $font-color;
         border-radius: 5px;
         border: none;
         min-height: $min-height;
