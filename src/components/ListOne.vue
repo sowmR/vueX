@@ -5,11 +5,13 @@
         <h2>{{title}}</h2>
     </div>
     <div class="row">
-        <div v-for="item in saleProducts" :key="item.name">
+      <center>
+        <div v-for="item in products" :key="item.name">
             <div class="product-list1">
-                <p class="item">{{item.name}} &nbsp; &nbsp; ${{item.price}}</p>
+                <p class="item link-btn" @click="goto(item.type)">{{item.type}}</p>
             </div>
         </div>
+      </center>
     </div>
   </div>
 </template>
@@ -19,7 +21,7 @@ export default {
   name: "ListOne",
   data() {
     return {
-      title: "List one : sale",
+      title: "Home Page.click on the product to view the list.",
     }
   },
   computed: {
@@ -30,6 +32,12 @@ export default {
     },
     saleProducts() {
        return this.$store.getters.saleProducts;
+    }
+  },
+  methods: {
+    goto(page) {
+      let _page="/2/"+page;
+      this.$router.push(_page);
     }
   }
 };
